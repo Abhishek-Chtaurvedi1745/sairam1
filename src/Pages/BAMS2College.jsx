@@ -2,6 +2,26 @@ import React from 'react'
 import Nav from '../Components/Nav'
 import Footer from '../Components/Footer'
 
+  const collegeData = [
+  { sr: 1, name: "NALASOPARA AYURVED MEDICAL COLLEGE, VASAI, THANE", city: "Mumbai", fees: "1.85" },
+{ sr: 2, name: "YMT AYURVEDIC MEDICAL COLLEGE, KHARGHAR", city: "Mumbai", fees: "2.85" },
+{ sr: 3, name: "BSDTS AYURVED MAHAVIDYALAYA, WAGHOLI", city: "Pune", fees: "1.40" },
+{ sr: 4, name: "PUNE DISTRICT EDUCATION ASSOCIATION’S, COLLEGE OF AYURVED & RESEARCH CENTRE", city: "Pune", fees: "2.45" },
+{ sr: 5, name: "MAHARASHTRA AROGYA MANDAL’S SUMATIBHAI SHAH AYURVED MAHAVIDYALAYA, HADAPSAR", city: "Pune", fees: "1.78" },
+{ sr: 6, name: "DR. J. J. MAGDUM AYURVED COLLEGE, JAYSINGPUR", city: "Kolhapur", fees: "2.32" },
+{ sr: 7, name: "HANUMAN SHIKSHAN PRASARAK MANDAL, AYURVEDIC MEDICAL COLLEGE, PETH VADGAON, HATKANGALE", city: "Kolhapur", fees: "2.35" },
+{ sr: 8, name: "YASHWANT AYURVEDIC MAHAVIDYALAYA, KODOLI, PANHALA", city: "Kolhapur", fees: "2.47" },
+{ sr: 9, name: "LATE KEDARI REDEKAR AYURVEDIC COLLEGE, GADHINGLAJ", city: "Kolhapur", fees: "2.35" },
+{ sr: 10, name: "SANT GAJANAN MAHARAJ AYURVED MEDICAL COLLEGE", city: "Kolhapur", fees: "1.65" },
+{ sr: 11, name: "SHRI ANNASAHEB DANGE AYURVED MEDICAL COLLEGE, ASHTA, WALWA", city: "Sangli", fees: "2.35" },
+{ sr: 12, name: "LOKNETE RAJARAM PATIL AYURVEDIC MAHAVIDYALAYA, ISLAMPUR, WALWA", city: "Sangli", fees: "2.23" },
+{ sr: 13, name: "JUPITER AYURVEDIC MEDICAL COLLEGE, KHAMLA ROAD", city: "Nagpur", fees: "0.90" },
+{ sr: 14, name: "DATTA MEGHE AYURVEDIC MEDICAL COLLEGE, HOSPITAL & RESEARCH CENTRE", city: "Nagpur", fees: "1.85" },
+{ sr: 15, name: "SANMARG SHIKSHAN SANSTHA, SHRI K R PANDAV AYURVEDIC COLLEGE", city: "Nagpur", fees: "1.70" },
+{ sr: 16, name: "B. MULAK AYURVED MAHAVIDYALAYA AND MEDICAL SCIENCE, GREAT NAG ROAD, NANDANWAN", city: "Nagpur", fees: "1.65" },
+{ sr: 17, name: "DATTA MEGHE AYURVEDIC MEDICAL COLLEGE, HOSPITAL & RESEARCH CENTRE", city: "Nagpur", fees: "1.85" },
+  ];
+
 function BAMS2College() {
   return (
     <div>
@@ -11,7 +31,7 @@ function BAMS2College() {
 
         <div className="font-poppins">
           <h1 className="text-[32px] md:text-[52px] font-semibold text-[#FFFFFF] leading-tight mt-[60px] md:mt-0">
-           BPT COLLEGES IN MAHARASHTRA
+           BAMS  COLLEGES IN MAHARASHTRA
           </h1>
 
 
@@ -35,10 +55,9 @@ function BAMS2College() {
             <thead className="bg-[#002741] font-semibold text-[22px] text-white p-10">
               <tr>
                 <th className="px-6 py-6 w-[5%]">SR NO.</th>
-                <th className="px-6 py-6 w-[55%]">BPT College’s Name</th>
+                <th className="px-6 py-6 w-[55%]">BAMS College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[15%]">CODE
-Year (Lacs)</th>
+                <th className="px-6 py-6 w-[15%]">FEE</th>
               </tr>
             </thead>
             <tbody>
@@ -59,7 +78,7 @@ Year (Lacs)</th>
         {college.city}
       </td>
       <td className="px-6 py-4">
-        {college.code}
+        {college.fees}
       </td>
     </tr>
   ))}
