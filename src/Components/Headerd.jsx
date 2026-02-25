@@ -40,7 +40,7 @@ function Headerd() {
     />
 
     <div className="absolute inset-0 z-20 flex items-center justify-center">
-      <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-md cursor-pointer hover:scale-105 transition">
+      {/* <div className="w-16 h-16 bg-white/90 rounded-full flex items-center justify-center shadow-md cursor-pointer hover:scale-105 transition">
         <svg
           xmlns="http://www.w3.org/2000/svg"
           fill="currentColor"
@@ -49,7 +49,7 @@ function Headerd() {
         >
           <path d="M8 5v14l11-7z" />
         </svg>
-      </div>
+      </div> */}
     </div>
 
   </div>
