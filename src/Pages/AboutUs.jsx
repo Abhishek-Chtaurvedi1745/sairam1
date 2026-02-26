@@ -17,7 +17,7 @@ function AboutUs() {
       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-6">
         <div className="flex-1">
           <h1 className="text-[32px]  font-bold text-[#2F327D] mb-4">
-            Who Are We?
+            Who Are We ?
           </h1>
 
           <p className=" mb-4 font-Regular text-[16px] md:text-[18px] text-[#696984] tracking-[0.02em]">
@@ -60,7 +60,7 @@ Positioned as an education and admission consulting organization, Sairam Educati
 </div>
         <div className="flex-1">
           <h1 className="text-[32px]  font-bold text-[#FFFFFF] mb-4">
-            What We Do?
+            What We Do ?
           </h1>
 
           <p className=" mb-4 text-[#FFFFFF] tracking-[0.02em]">
@@ -138,6 +138,9 @@ focus on transparency, process-driven counseling, and continual improvement in t
 students and institutions.
     </p>
 
+  </div>
+  <div className='flex justify-center mt-8 m-5'>
+  <img src="/assets/certiimg.svg" alt=""  className='shadow-2xl'/>
   </div>
 </section>
 <Review/>

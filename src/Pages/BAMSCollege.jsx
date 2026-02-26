@@ -93,7 +93,7 @@ const collegeData = [
 { sr: "92", name: "HOM.MED.COLLEGE, ALEPHATA JUNNAR", city: "PUNE", code: "4143" },
 { sr: "93", name: "PSPM'S MAHILA HOMOEOPATHIC MEDICAL COLLEGE", city: "SOLAPUR", code: "4144" },
 { sr: "94", name: "CHAMUNDAMATA HOM. MED. COL", city: "JALGAON", code: "4145" },
- { sr: "96", name: "DR. ULHAS PATIL HOMOEOPATHIC COLLEGE", city: "JALGAON", code: "4145" },
+ { sr: "95", name: "DR. ULHAS PATIL HOMOEOPATHIC COLLEGE", city: "JALGAON", code: "4145" },
 //  Second 
   // { sr: "97", name: "Nalasopara Ayurved Medical College, Vasai, Thane", city: "MUMBAI", fees: "1.85" },
   // { sr: "98", name: "YMT Ayurvedic Medical College, Kharghar", city: "MUMBAI", fees: "2.85" },
@@ -150,8 +150,8 @@ function BAMSCollege() {
                 <th className="px-6 py-6 w-[15%]">SR NO.</th>
                 <th className="px-6 py-6 w-[55%]">BAMS College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[15%]">CODE
-Year (Lacs)</th>
+                {/* <th className="px-6 py-6 w-[15%]">CODE
+Year (Lacs)</th> */}
               </tr>
             </thead>
             <tbody>
@@ -171,9 +171,9 @@ Year (Lacs)</th>
       <td className="px-6 py-4 border-r border-[#002741]">
         {college.city}
       </td>
-      <td className="px-6 py-4">
+      {/* <td className="px-6 py-4">
         {college.code}
-      </td>
+      </td> */}
     </tr>
   ))}
 </tbody>

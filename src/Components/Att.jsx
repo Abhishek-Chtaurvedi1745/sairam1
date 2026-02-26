@@ -14,7 +14,7 @@ function Att() {
       <div className="relative z-10 max-w-[1600px] mx-auto px-6 text-white">
 
         <h2 className="text-[32px] font-bold text-center mb-16">
-          How Are We Different From Others?
+          How Are We Different From Others ?
         </h2>
        <div className="max-w-5xl mx-auto">
         <div className="grid md:grid-cols-2 place-items-center gap-8 mb-12">
@@ -51,7 +51,7 @@ students across multiple locations
 
          <div className="border border-2 rounded-tr-[77px] p-8 rounded-md">
             <p className="text-[16px] md:text-[20px] leading-relaxed">
-             <strong>Structured counseling process</strong>
+             <strong>Structured counseling process </strong>
 that prioritizes clarity and transparency
             </p>
           </div>

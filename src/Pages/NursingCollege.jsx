@@ -58,7 +58,7 @@ function NursingCollege() {
                 <th className="px-6 py-6 w-[15%]">SR NO.</th>
                 <th className="px-6 py-6 w-[55%]">Nursing College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[15%]">CODE</th>
+                {/* <th className="px-6 py-6 w-[15%]">CODE</th> */}
               </tr>
             </thead>
             <tbody>
@@ -78,9 +78,9 @@ function NursingCollege() {
       <td className="px-6 py-4 border-r border-[#002741]">
         {college.city}
       </td>
-      <td className="px-6 py-4">
+      {/* <td className="px-6 py-4">
         {college.code}
-      </td>
+      </td> */}
     </tr>
   ))}
 </tbody>

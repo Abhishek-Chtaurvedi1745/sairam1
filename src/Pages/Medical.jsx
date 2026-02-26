@@ -34,7 +34,7 @@ function Medical() {
           Sairam Education & Consultancy Services provides structured medical counselling and admission guidance for students aspiring to build a career in medicine and allied health sciences. Our approach is focused on clarity, eligibility alignment, and realistic admission pathways, helping students and parents navigate complex counselling processes with confidence.
           </p>
           <br />
-          <p className=" mb-4 font-Regular text-[16px] md:text-[18px] text-[#696984] tracking-[0.02em]">We offer guidance for direct admissions, management quota, and NRI quota seats, ensuring that students clearly understand available options, admission procedures, and institutional requirements. Our counselling is transparent, process-driven, and aligned with current admission frameworks.</p>
+          <p className=" mb-4 font-Regular text-[16px] md:text-[18px] text-[#696984] tracking-[0.02em]">We offer guidance for direct admissions, Institute Quota, and NRI quota seats, ensuring that students clearly understand available options, admission procedures, and institutional requirements. Our counselling is transparent, process-driven, and aligned with current admission frameworks.</p>
 
         </div>
 
@@ -84,8 +84,8 @@ students at every stage of the admission journey</p>
            <ul className="mt-6">
             {[
               "One-to-one medical career counselling based on academic profile and eligibility",
-              "Guidance for direct admission, management quota, and NRI quota seats",
-              "Guidance for government, private, deemed universities, management quota, and NRI quota admissions",
+              "Guidance for direct admission, Institute Quota, and NRI quota seats",
+              "Guidance for government, private, deemed universities, Institute Quota, and NRI quota admissions",
               "Support for counselling processes, option selection, and documentation",
               "Assistance with admission planning based on course preference and budget considerations",
               "End-to-end admission guidance until college reporting and confirmation",
@@ -154,8 +154,7 @@ allied health courses
               "BDS",
               "B.Pharm",
               "BPT",
-              "B.Sc Nursing",
-              "Other Allied Health Courses",
+              "B.Sc Nursing"
             ].map((item, index) => (
             <li key={index} className="flex gap-3 mb-4">
   <span className="flex items-center justify-center w-6 h-6 bg-[#49BBBD] text-white rounded-full shrink-0 self-start mt-[6px]">
@@ -351,7 +350,7 @@ with long-term academic goals
          <div className="bg-[#193C54]  rounded-tr-[77px] p-8 rounded-md">
             <p className="text-[16px] md:text-[20px] leading-relaxed">
              Guidance for direct admission,
-management quota, and NRI quota
+Institute Quota, and NRI quota
 pathways
             </p>
           </div>

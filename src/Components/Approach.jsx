@@ -52,7 +52,7 @@ function Approach() {
                 className="w-full h-[203px] mb-4 object-cover rounded-lg"
               />
               <h3 className="text-xl font-semibold mb-2">{blog.title}</h3>
-              <p className="text-gray-600 mb-4 line-clamp-2">{blog.desc}</p>
+              <p className="text-gray-600 mb-4">{blog.desc}</p>
               <hr className="border-gray-300" />
             </div>
           </div>
@@ -62,7 +62,6 @@ function Approach() {
    <button className="block mx-auto p-3 px-6 bg-[#C30D22] font-semibold text-[18px] text-[#FFFFFF] rounded-full">Book Your FREE Consultation Today</button>
    </div>
     </section>
- 
   );
 }
 

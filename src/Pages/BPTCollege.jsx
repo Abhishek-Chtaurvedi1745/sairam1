@@ -69,8 +69,8 @@ function BPTCollege() {
                 <th className="px-6 py-6 w-[5%]">SR NO.</th>
                 <th className="px-6 py-6 w-[55%]">BPT College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[15%]">CODE
-Year (Lacs)</th>
+                {/* <th className="px-6 py-6 w-[15%]">CODE
+Year (Lacs)</th> */}
               </tr>
             </thead>
             <tbody>
@@ -90,9 +90,9 @@ Year (Lacs)</th>
       <td className="px-6 py-4 border-r border-[#002741]">
         {college.city}
       </td>
-      <td className="px-6 py-4">
+      {/* <td className="px-6 py-4">
         {college.code}
-      </td>
+      </td> */}
     </tr>
   ))}
 </tbody>

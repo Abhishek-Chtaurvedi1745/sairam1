@@ -37,7 +37,7 @@ function Engineer() {
            Sairam Education & Consultancy Services offers structured engineering counselling and admission guidance for students aspiring to pursue undergraduate and postgraduate engineering programs. Our counselling approach focuses on eligibility alignment, course suitability, and transparent admission pathways to help students make informed academic decisions.
           </p>
           <br />
-          <p className=" mb-4 font-Regular text-[16px] md:text-[18px] text-[#696984] tracking-[0.02em]">We provide guidance for admissions through management quota, and NRI quota seats across engineering institutions, supporting students and parents throughout the admission process with clarity and consistency.</p>
+          <p className=" mb-4 font-Regular text-[16px] md:text-[18px] text-[#696984] tracking-[0.02em]">We provide guidance for admissions through merit quota, management quota, and NRI quota seats across engineering institutions, supporting students and parents throughout the admission process with clarity and consistency.</p>
 
         </div>
 
@@ -108,7 +108,7 @@ function Engineer() {
 </div>
         <div className="flex-1">
           <h1 className="text-[32px]  font-bold text-[#2F327D] mb-4">
-           Engineering/B.Tech
+           Engineering/BTech/BE
           </h1>
            <ul className="mt-6">
             {[
@@ -151,7 +151,7 @@ function Engineer() {
      <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 mt-[43px]">
         <div className="flex-1">
           <h1 className="text-[32px]  font-bold text-[#2F327D] mb-4">
-           M.Tech
+           M.Tech/ME
           </h1>
            <ul className="mt-6">
             {[
@@ -209,7 +209,7 @@ function Engineer() {
 </div>
       </div>
 
-       <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 mt-[43px]">
+       {/* <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 mt-[43px]">
          <div className="flex-1 flex justify-center">
   <div className="relative inline-block">
 
@@ -268,8 +268,8 @@ function Engineer() {
           </ul>
         
         </div>
-      </div>
-        <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 mt-[43px]">
+      </div> */}
+        {/* <div className="max-w-6xl mx-auto px-6 flex flex-col md:flex-row items-center gap-8 mt-[43px]">
 
         <div className="flex-1">
           <h1 className="text-[32px]  font-bold text-[#2F327D] mb-4">
@@ -329,7 +329,7 @@ function Engineer() {
 
   </div>
 </div>
-      </div>
+      </div> */}
 </section>
  <section className="py-20">
       <div className="max-w-7xl mx-auto px-6">
@@ -441,8 +441,8 @@ aligned with academic goals
 
          <div className="bg-[#193C54]  rounded-tr-[77px] p-8 rounded-md">
             <p className="text-[16px] md:text-[20px] leading-relaxed">
-             Guidance for direct admission,
-management quota, and NRI quota
+             Guidance for direct admission, merit quota, 
+ management quota, and NRI quota
 seats
             </p>
           </div>

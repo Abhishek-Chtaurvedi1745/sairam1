@@ -57,7 +57,7 @@ function BAMS2College() {
                 <th className="px-6 py-6 w-[5%]">SR NO.</th>
                 <th className="px-6 py-6 w-[55%]">BAMS College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[15%]">FEE</th>
+                {/* <th className="px-6 py-6 w-[15%]">FEE</th> */}
               </tr>
             </thead>
             <tbody>
@@ -77,9 +77,9 @@ function BAMS2College() {
       <td className="px-6 py-4 border-r border-[#002741]">
         {college.city}
       </td>
-      <td className="px-6 py-4">
+      {/* <td className="px-6 py-4">
         {college.fees}
-      </td>
+      </td> */}
     </tr>
   ))}
 </tbody>

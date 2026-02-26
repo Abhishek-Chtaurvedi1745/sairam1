@@ -47,9 +47,9 @@ function BDSCollege() {
             <thead className="bg-[#002741] font-semibold text-[22px] text-white p-10">
               <tr>
                 <th className="px-6 py-6 w-[5%]">SR NO.</th>
-                <th className="px-6 py-6 w-[55%]">BAMS College’s Name</th>
+                <th className="px-6 py-6 w-[55%]">BDS College’s Name</th>
                 <th className="px-6 py-6 w-[10%]">CITY</th>
-                <th className="px-6 py-6 w-[30%]">Annual Fee Gen. Fee / NRI Fee INR in Lacs. / USD</th>
+                {/* <th className="px-6 py-6 w-[30%]">Annual Fee Gen. Fee / NRI Fee INR in Lacs. / USD</th> */}
               </tr>
             </thead>
             <tbody>
@@ -69,9 +69,9 @@ function BDSCollege() {
       <td className="px-6 py-4 border-r border-[#002741]">
         {college.city}
       </td>
-      <td className="px-6 py-4">
+      {/* <td className="px-6 py-4">
         {college.fee}
-      </td>
+      </td> */}
     </tr>
   ))}
 </tbody>

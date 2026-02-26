@@ -26,7 +26,7 @@ function City() {
   },
   {
     id: 4,
-    title: "Hariyana",
+    title: "Haryana",
     desc: "Gurugram, Faridabad, Rohtak",
     img: "/assets/hariyana.svg",
     bgColor: "#CED5FA",

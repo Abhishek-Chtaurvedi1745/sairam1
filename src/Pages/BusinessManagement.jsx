@@ -110,7 +110,7 @@ function BusinessManagement() {
     <section className="py-16 px-6">
   <div className="max-w-4xl mx-auto text-center">
     <h2 className="text-[32px] font-bold text-[#002741] mb-4">
-      Undergraduate Engineering Courses
+      Undergraduate Management Courses
     </h2>
     <p className="text-[16px] md:text-[20px] font-medium  text-[#2F327D] leading-relaxed">
       We provide counselling and admission support for the following undergraduate programs
@@ -174,7 +174,7 @@ function BusinessManagement() {
 <section className="py-16 px-6 bg-[#EEF4FF]">
   <div className="max-w-4xl mx-auto text-center">
     <h2 className="text-[32px] font-bold text-[#002741] mb-4">
-      Postgraduate Engineering Courses
+      Postgraduate Management Courses
     </h2>
     <p className="text-[16px] md:text-[20px] font-medium  text-[#2F327D] leading-relaxed">
      Sairam Education supports postgraduate admissions across management and business disciplines
@@ -188,7 +188,6 @@ function BusinessManagement() {
               "MBA / PGDM",
               "MMS",
               "Executive MBA / PGDM",
-              "MHM",
               "MSc in Management",
             ].map((item, index) => (
             <li key={index} className="flex gap-3 mb-4">

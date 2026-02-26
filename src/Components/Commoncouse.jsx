@@ -23,7 +23,7 @@ function Commoncouse() {
            <ul className="mt-6">
             {[
               "One-to-one career and engineering stream counselling",
-              "Guidance for direct admission, management quota, and NRI quota seats",
+              "Guidance for direct admission, merit quota, management quota, and NRI quota seats",
               "Support with admission planning, documentation, and institutional processes",
               "Course and specialization guidance based on academic profile and interests",
               "End-to-end admission assistance until college reporting and confirmation",
