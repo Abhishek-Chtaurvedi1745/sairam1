@@ -6,7 +6,7 @@ function City() {
   {
     id: 1,
     title: "MH",
-    desc: "Pune, Mumbai, Nagpur, Nashik, Aurangabad",
+    desc: "Pune, Mumbai, Nagpur, Nashik, Chhatrapati Sambhajinagar",
     img: "/assets/mh.svg",
     bgColor: "#E2F0FF",
   },
