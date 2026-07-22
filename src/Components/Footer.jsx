@@ -151,7 +151,7 @@ across 80+ locations in India, supported by
 
       {/* Bottom Bar */}
       <div className=" bg-[#FFFFFF] mt-12 p-6 text-center text-[#000000] text-sm w-full">
-        © {new Date().getFullYear()} Copyright © 2026 | Sairameducation | Powered by SCS Pvt. Ltd.
+        © {new Date().getFullYear()} Copyright © 2026 | Sairameducation | Web Services By <a href="https://razobyte.com/">Razobyte</a>
       </div>
     </footer>
   );

@@ -30,6 +30,16 @@ import Career from "./Pages/Career";
 import Marquee from "./Components/Marquee";
 import WhatsappButton from "./Components/Whatsappbutton";
 import MBBSch from "./Pages/MBBSch";
+import MBBSCg from "./Pages/MBBSCg";
+import MBBSMp from "./Pages/MBBSMp";
+import MBBSMh from "./Pages/MBBSMh";
+import MBBSRj from "./Pages/MBBSRj";
+import MBBSUp from "./Pages/MBBSUp";
+import BTechPune from "./Pages/BTechPune";
+import BTechBangalore from "./Pages/BTechBangalore";
+import BTechChennai from "./Pages/BTechChennai";
+import BTechDelhiNoida from "./Pages/BTechDelhiNoida";
+import BTechMumbai from "./Pages/BTechMumbai";
 
 
 function ScrollToTop() {
@@ -78,6 +88,16 @@ function App() {
         <Route path="/news-details/:slug" element={<NewsDetails />} />   
         <Route path="/career"  element={<Career />} />
         <Route path="/mbbs-karnataka"  element={<MBBSch />} />
+        <Route path="/mbbs-chhattisgarh" element={<MBBSCg />} />
+        <Route path="/mbbs-madhya-pradesh" element={<MBBSMp />} />
+        <Route path="/mbbs-maharashtra" element={<MBBSMh />} />
+        <Route path="/mbbs-rajasthan" element={<MBBSRj />} />
+        <Route path="/mbbs-uttar-pradesh" element={<MBBSUp />} />
+        <Route path="/btech-pune" element={<BTechPune />} />
+        <Route path="/btech-bangalore" element={<BTechBangalore />} />
+        <Route path="/btech-chennai" element={<BTechChennai />} />
+        <Route path="/btech-delhi-noida" element={<BTechDelhiNoida />} />
+        <Route path="/btech-mumbai" element={<BTechMumbai />} />
        </Routes>
     </Router>
     </>
