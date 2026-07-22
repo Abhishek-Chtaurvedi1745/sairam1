@@ -55,3 +55,61 @@ html {
 section {
   scroll-margin-top: 80px; /* adjust based on navbar height */
 }
+
+/* Popup enter */
+@keyframes popupIn {
+  from {
+    opacity: 0;
+    transform: translateY(16px) scale(0.96);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0) scale(1);
+  }
+}
+
+.animate-popup-in {
+  animation: popupIn 0.28s ease-out;
+}
+
+/* Phone wave / ripple */
+.phone-wave-btn {
+  isolation: isolate;
+}
+
+.phone-wave {
+  position: absolute;
+  inset: 0;
+  border-radius: 9999px;
+  border: 2px solid rgba(255, 255, 255, 0.85);
+  pointer-events: none;
+  animation: phoneWave 2s ease-out infinite;
+}
+
+.phone-wave-2 {
+  animation-delay: 0.45s;
+}
+
+.phone-wave-3 {
+  animation-delay: 0.9s;
+}
+
+@keyframes phoneWave {
+  0% {
+    transform: scale(1);
+    opacity: 0.7;
+  }
+  100% {
+    transform: scale(2.1);
+    opacity: 0;
+  }
+}
+
+/* Floating Get Counselling button */
+.get-counselling-btn {
+  box-shadow: -2px 4px 16px rgba(0, 0, 0, 0.18);
+}
+
+.get-counselling-btn:hover {
+  padding-right: 0.85rem;
+}

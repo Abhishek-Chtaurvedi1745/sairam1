@@ -40,6 +40,9 @@ import BTechBangalore from "./Pages/BTechBangalore";
 import BTechChennai from "./Pages/BTechChennai";
 import BTechDelhiNoida from "./Pages/BTechDelhiNoida";
 import BTechMumbai from "./Pages/BTechMumbai";
+import { CounsellingProvider } from "./Components/CounsellingContext";
+import CounsellingPopup from "./Components/CounsellingPopup";
+import GetCounsellingButton from "./Components/GetCounsellingButton";
 
 
 function ScrollToTop() {
@@ -57,11 +60,14 @@ function App() {
   <>
     
     <Router>
+      <CounsellingProvider>
       <GTMTracker/>
       <CanonicalTag/>
       <ScrollToTop /> 
       <Marquee />
       <WhatsappButton />
+      <GetCounsellingButton />
+      <CounsellingPopup />
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/about" element={<AboutUs />} />
@@ -99,6 +105,7 @@ function App() {
         <Route path="/btech-delhi-noida" element={<BTechDelhiNoida />} />
         <Route path="/btech-mumbai" element={<BTechMumbai />} />
        </Routes>
+      </CounsellingProvider>
     </Router>
     </>
   );

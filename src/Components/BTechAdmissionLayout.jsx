@@ -175,10 +175,10 @@ function BTechAdmissionLayout({
                 guidance and 100% support.
               </p>
               <a
-                href="tel:+918237699993"
+                href="tel:+919146056767"
                 className="inline-flex items-center justify-center gap-2 bg-gradient-to-r from-blue-700 to-blue-900 hover:from-blue-800 hover:to-blue-950 text-white font-semibold px-6 py-3 rounded-xl transition shadow-md hover:shadow-lg w-full"
               >
-                📞 Call Now: +91 8237699993
+                📞 Call Now: +91 9146056767
               </a>
             </div>
 

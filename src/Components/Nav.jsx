@@ -1,6 +1,7 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { ChevronDown, Menu, X } from "lucide-react";
+import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { useCounselling } from "./CounsellingContext";
 
 function Nav() {
   const [open, setOpen] = useState(false);
@@ -9,13 +10,22 @@ function Nav() {
   const [contactOpen, setContactOpen] = useState(false);
   const [mbbsOpen, setMbbsOpen] = useState(false);
   const [btechOpen, setBtechOpen] = useState(false);
+  const [scrolled, setScrolled] = useState(false);
+  const { open: popupOpen, openPopup } = useCounselling();
 
   useEffect(() => {
-    document.body.style.overflow = open ? "hidden" : "";
+    document.body.style.overflow = open || popupOpen ? "hidden" : "";
     return () => {
       document.body.style.overflow = "";
     };
-  }, [open]);
+  }, [open, popupOpen]);
+
+  useEffect(() => {
+    const onScroll = () => setScrolled(window.scrollY > 8);
+    onScroll();
+    window.addEventListener("scroll", onScroll, { passive: true });
+    return () => window.removeEventListener("scroll", onScroll);
+  }, []);
 
   const linkClass =
     "text-white whitespace-nowrap text-[13px] xl:text-[14px] 2xl:text-[16px] font-medium hover:opacity-90 transition";
@@ -28,7 +38,11 @@ function Nav() {
 
   return (
     <>
-      <nav className="w-full px-3 sm:px-4 lg:px-5 xl:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-3 bg-[#49BBBD] relative z-50">
+      <nav
+        className={`w-full px-3 sm:px-4 lg:px-5 xl:px-6 py-2.5 sm:py-3 flex items-center justify-between gap-3 bg-[#49BBBD] sticky top-0 z-[60] transition-shadow duration-300 ${
+          scrolled ? "shadow-lg" : "shadow-md"
+        }`}
+      >
         <div className="flex items-center shrink-0">
           <Link to="/">
             <img
@@ -193,21 +207,53 @@ function Nav() {
           </div>
         </div>
 
-        <div className="hidden xl:block shrink-0">
+        <div className="hidden xl:flex items-center gap-2.5 shrink-0">
+          <a
+            href="tel:+919146056767"
+            className="phone-wave-btn relative flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#49BBBD] hover:bg-gray-100 transition"
+            aria-label="Call now"
+          >
+            <span className="phone-wave phone-wave-1" aria-hidden="true" />
+            <span className="phone-wave phone-wave-2" aria-hidden="true" />
+            <span className="phone-wave phone-wave-3" aria-hidden="true" />
+            <Phone size={18} className="relative z-10" />
+          </a>
+
           <Link to="/contact-us">
-            <button className="bg-white font-semibold text-[#5B5B5B] text-[12px] xl:text-[13px] 2xl:text-[15px] px-3 xl:px-4 2xl:px-5 py-1.5 xl:py-2 rounded-full hover:bg-gray-100 whitespace-nowrap transition">
+            <button
+              type="button"
+              className="bg-white font-semibold text-[#5B5B5B] text-[12px] xl:text-[13px] 2xl:text-[15px] px-3 xl:px-4 2xl:px-5 py-1.5 xl:py-2 rounded-full hover:bg-gray-100 whitespace-nowrap transition"
+            >
               Career Counseling
             </button>
           </Link>
         </div>
 
-        <button
-          onClick={() => setOpen(true)}
-          className="xl:hidden text-white p-1.5 rounded-md hover:bg-white/10 transition"
-          aria-label="Open menu"
-        >
-          <Menu size={28} />
-        </button>
+        <div className="xl:hidden flex items-center gap-2">
+          <a
+            href="tel:+919146056767"
+            className="phone-wave-btn relative flex items-center justify-center w-9 h-9 rounded-full bg-white text-[#49BBBD]"
+            aria-label="Call now"
+          >
+            <span className="phone-wave phone-wave-1" aria-hidden="true" />
+            <span className="phone-wave phone-wave-2" aria-hidden="true" />
+            <Phone size={16} className="relative z-10" />
+          </a>
+          <button
+            type="button"
+            onClick={openPopup}
+            className="bg-white text-[#5B5B5B] text-[11px] font-semibold px-2.5 py-1.5 rounded-full transition hover:bg-gray-100"
+          >
+            Counselling
+          </button>
+          <button
+            onClick={() => setOpen(true)}
+            className="text-white p-1.5 rounded-md hover:bg-white/10 transition"
+            aria-label="Open menu"
+          >
+            <Menu size={28} />
+          </button>
+        </div>
       </nav>
 
       {/* Mobile / tablet / small laptop menu */}
