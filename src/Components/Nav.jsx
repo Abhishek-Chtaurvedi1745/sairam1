@@ -178,7 +178,7 @@ function Nav() {
                 Admission in Engineering, Chennai
               </Link>
               <Link to="/btech-delhi-noida" className={dropdownItemClass}>
-                Admission in Engineering, Delhi & Noida
+                Admission in Engineering, Delhi & Delhi NCR
               </Link>
               <Link to="/btech-mumbai" className={dropdownItemClass}>
                 Admission in Engineering, Mumbai
