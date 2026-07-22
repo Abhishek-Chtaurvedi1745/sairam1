@@ -79,7 +79,7 @@ section {
 
 .phone-wave {
   position: absolute;
-  inset: 0;
+  inset: -4px;
   border-radius: 9999px;
   border: 2px solid rgba(255, 255, 255, 0.85);
   pointer-events: none;

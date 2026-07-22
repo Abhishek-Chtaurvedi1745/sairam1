@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
 import React, { useEffect, useState } from "react";
-import { ChevronDown, Menu, Phone, X } from "lucide-react";
+import { ChevronDown, Menu, X } from "lucide-react";
 import { useCounselling } from "./CounsellingContext";
 
 function Nav() {
@@ -207,37 +207,28 @@ function Nav() {
           </div>
         </div>
 
-        <div className="hidden xl:flex items-center gap-2.5 shrink-0">
+        <div className="hidden xl:flex items-center shrink-0">
           <a
             href="tel:+919146056767"
-            className="phone-wave-btn relative flex items-center justify-center w-10 h-10 rounded-full bg-white text-[#49BBBD] hover:bg-gray-100 transition"
-            aria-label="Call now"
+            className="phone-wave-btn relative flex items-center justify-center bg-white text-[#49BBBD] font-semibold text-[12px] xl:text-[13px] 2xl:text-[15px] px-4 xl:px-5 py-1.5 xl:py-2 rounded-full hover:bg-gray-100 whitespace-nowrap transition"
+            aria-label="Call us"
           >
             <span className="phone-wave phone-wave-1" aria-hidden="true" />
             <span className="phone-wave phone-wave-2" aria-hidden="true" />
             <span className="phone-wave phone-wave-3" aria-hidden="true" />
-            <Phone size={18} className="relative z-10" />
+            <span className="relative z-10">Call us</span>
           </a>
-
-          <Link to="/contact-us">
-            <button
-              type="button"
-              className="bg-white font-semibold text-[#5B5B5B] text-[12px] xl:text-[13px] 2xl:text-[15px] px-3 xl:px-4 2xl:px-5 py-1.5 xl:py-2 rounded-full hover:bg-gray-100 whitespace-nowrap transition"
-            >
-              Career Counseling
-            </button>
-          </Link>
         </div>
 
         <div className="xl:hidden flex items-center gap-2">
           <a
             href="tel:+919146056767"
-            className="phone-wave-btn relative flex items-center justify-center w-9 h-9 rounded-full bg-white text-[#49BBBD]"
-            aria-label="Call now"
+            className="phone-wave-btn relative flex items-center justify-center bg-white text-[#49BBBD] text-[11px] font-semibold px-3 py-1.5 rounded-full"
+            aria-label="Call us"
           >
             <span className="phone-wave phone-wave-1" aria-hidden="true" />
             <span className="phone-wave phone-wave-2" aria-hidden="true" />
-            <Phone size={16} className="relative z-10" />
+            <span className="relative z-10">Call us</span>
           </a>
           <button
             type="button"
@@ -553,11 +544,13 @@ function Nav() {
             )}
           </div>
 
-          <Link to="/contact-us" onClick={() => setOpen(false)}>
-            <button className="mt-4 w-full bg-white text-[#5B5B5B] font-semibold px-5 py-3 rounded-full">
-              Career Counseling
-            </button>
-          </Link>
+          <a
+            href="tel:+919146056767"
+            onClick={() => setOpen(false)}
+            className="mt-4 w-full bg-white text-[#49BBBD] font-semibold px-5 py-3 rounded-full text-center block"
+          >
+            Call us
+          </a>
         </div>
       </div>
 
