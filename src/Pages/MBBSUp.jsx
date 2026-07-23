@@ -5,12 +5,22 @@ function MBBSUp() {
   return (
     <MBBSAdmissionLayout
       stateName="Uttar Pradesh"
-      image="/assets/um.png"
-      imageAlt="Medical College Campus in Uttar Pradesh"
+      images={[
+        "/assets/mbbs/uttar-pradesh/16678153180-1.webp",
+        "/assets/mbbs/uttar-pradesh/16678153181-1.webp",
+        "/assets/mbbs/uttar-pradesh/16678153182-1.webp",
+        "/assets/mbbs/uttar-pradesh/16678153184-1.webp",
+      ]}
+      imageAlt="MBBS Admission in Uttar Pradesh"
       counselingBody="DGME / UPDGME Uttar Pradesh counselling"
       intro={[
-        "Uttar Pradesh has one of the largest networks of medical colleges in India, making it a major hub for MBBS admissions.",
-        "Students can choose from numerous government and private medical institutions through NEET-based counselling.",
+        "UP State has been one of the important states for admission in MBBS for students across India. There are total of 51 Medical colleges in Uttar Pradesh. Out of which government and private medical colleges together form a large network of options.",
+        "We help students in getting MBBS admission in Uttar Pradesh with complete counselling guidance for government, private, and management quota seats.",
+      ]}
+      stats={[
+        "Total Medical Colleges in Uttar Pradesh – 51 (6569 seats) + 6 central universities (AIIMS, AMC and IMS BHU)",
+        "Total Government Colleges in Uttar Pradesh – 24 (2469 seats)",
+        "Total Private Medical Colleges in Uttar Pradesh – 29 (4100 seats)",
       ]}
       fees={[
         "Private MBBS college fees in Uttar Pradesh typically range from ₹7–₹16 lakhs per year.",

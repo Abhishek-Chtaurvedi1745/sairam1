@@ -5,12 +5,23 @@ function BTechChennai() {
   return (
     <BTechAdmissionLayout
       cityName="Chennai"
-      image="/assets/eb.png"
-      imageAlt="Engineering College Campus in Chennai"
+      images={[
+        "/assets/btech/chennai/16785197140.jpg",
+        "/assets/btech/chennai/16784562311-1.webp",
+        "/assets/btech/chennai/16784562312-1.webp",
+        "/assets/btech/chennai/16784562313-1.webp",
+      ]}
+      imageAlt="Admission in Engineering, Chennai"
       counselingBody="TNEA / Anna University counselling"
       intro={[
+        "We promise students consistent support and guidance to select a college for Engineering. Direct admission in Engineering through management quota is a good option to get into top colleges in Chennai.",
+        "Engineering is a branch of science and technology that aims to design, build, and use machines and structures to solve complex problems. After completion of the four-year program, graduates are awarded either a Bachelor of Engineering or a B.Tech degree.",
         "Chennai is a major hub for engineering education in South India, known for established universities, quality teaching, and strong core engineering programs.",
-        "The city offers excellent options in Computer Science, Electronics, Mechanical, Civil, and emerging technology branches.",
+      ]}
+      stats={[
+        "Total Engineering Colleges in Chennai – 100+ Colleges",
+        "Total Government / Autonomous Engineering Colleges in Chennai – 15+ Colleges",
+        "Total Private Engineering Colleges in Chennai – 85+ Colleges",
       ]}
       fees={[
         "Private engineering college fees in Chennai generally range from ₹70,000 to ₹2.5 lakhs per year.",

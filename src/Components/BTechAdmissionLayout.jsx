@@ -1,12 +1,15 @@
 import React from "react";
 import Footer from "./Footer";
 import Nav from "./Nav";
+import ImageSlider from "./ImageSlider";
 
 function BTechAdmissionLayout({
   cityName,
   image,
+  images,
   imageAlt,
   intro,
+  stats = [],
   fees,
   quota,
   process,
@@ -14,6 +17,7 @@ function BTechAdmissionLayout({
   counselingBody,
 }) {
   const title = `Admission in Engineering, ${cityName}`;
+  const sliderImages = images?.length ? images : image ? [image] : [];
 
   return (
     <>
@@ -62,24 +66,14 @@ function BTechAdmissionLayout({
 
         <main className="max-w-[1200px] mx-auto my-12 px-5 grid grid-cols-1 md:grid-cols-11 gap-10">
           <section className="md:col-span-7 flex flex-col gap-6">
-            <div className="overflow-hidden shadow-lg hover:shadow-2xl transition">
-              <img
-                src={image}
-                alt={imageAlt || `Engineering College in ${cityName}`}
-                className="w-full h-[320px] object-cover hover:scale-105 transition duration-500"
-              />
-            </div>
+            <ImageSlider
+              images={sliderImages}
+              alt={imageAlt || `Engineering College in ${cityName}`}
+            />
 
             <h2 className="text-3xl font-bold text-gray-800 leading-snug">
-              {title} – Complete Guidance for 2026
+              Direct Admission in Engineering Top Colleges in {cityName}
             </h2>
-
-            <p className="text-gray-600 leading-relaxed mt-3">
-              Explore top engineering colleges, admission process, eligibility criteria,
-              fee structure, and management quota details for B-Tech admission in{" "}
-              {cityName}. Get complete guidance to secure admission in government and
-              private engineering colleges.
-            </p>
 
             <div className="max-w-[900px] space-y-16 text-gray-700 py-6">
               <section id="introduction">
@@ -90,6 +84,19 @@ function BTechAdmissionLayout({
                     <p key={i}>{para}</p>
                   ))}
                 </div>
+
+                {stats?.length > 0 && (
+                  <div className="mt-6 space-y-2 bg-[#F3F8FA] border border-[#d7e8ec] rounded-xl p-5">
+                    {stats.map((item, i) => (
+                      <p
+                        key={i}
+                        className="text-[#002741] font-semibold text-[15px] md:text-[17px] leading-relaxed"
+                      >
+                        {item}
+                      </p>
+                    ))}
+                  </div>
+                )}
               </section>
 
               <section id="fees">

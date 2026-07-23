@@ -5,12 +5,21 @@ function MBBSRj() {
   return (
     <MBBSAdmissionLayout
       stateName="Rajasthan"
-      image="/assets/ne.jpeg"
-      imageAlt="Medical College Campus in Rajasthan"
+      images={[
+        "/assets/mbbs/rajasthan/16835518990.webp",
+        "/assets/mbbs/rajasthan/16835518991.webp",
+        "/assets/mbbs/rajasthan/16835518992.webp",
+      ]}
+      imageAlt="MBBS Admission in Rajasthan"
       counselingBody="NEET UG Medical & Dental Admission / Counselling Board, Rajasthan"
       intro={[
-        "Rajasthan is a preferred MBBS destination with well-established medical colleges and growing private medical education options.",
-        "Admissions are conducted through NEET UG with state and institutional counselling processes.",
+        "It is one of the best states for MBBS admission in India. Rajasthan has one of the best medical colleges in the country. Many students have their first preference as Rajasthan for their MBBS admission.",
+        "Rajasthan has a total of 17 government medical colleges and 9 private medical colleges. We help students in MBBS admission in Rajasthan with complete guidance.",
+      ]}
+      stats={[
+        "Total Medical colleges in Rajasthan – 26 (4705 seats)",
+        "Total Government medical colleges in Rajasthan – 17 Colleges",
+        "Total Private medical colleges in Rajasthan – 9 Colleges",
       ]}
       fees={[
         "Average MBBS fees in Rajasthan private colleges usually range from ₹6–₹15 lakhs per year.",

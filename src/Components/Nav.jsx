@@ -185,7 +185,7 @@ function Nav() {
               </Link>
             </div>
           </div>
-
+          
           <div className="relative group">
             <div className="flex items-center gap-0.5 cursor-pointer select-none">
               <Link to="/contact" className={linkClass}>

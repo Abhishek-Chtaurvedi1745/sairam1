@@ -5,12 +5,24 @@ function MBBSMh() {
   return (
     <MBBSAdmissionLayout
       stateName="Maharashtra"
-      image="/assets/mm.png"
-      imageAlt="Medical College Campus in Maharashtra"
+      images={[
+        "/assets/mbbs/maharashtra/16678147740.webp",
+        "/assets/mbbs/maharashtra/16678147741.webp",
+        "/assets/mbbs/maharashtra/16678147742.webp",
+        "/assets/mbbs/maharashtra/16678147743.webp",
+        "/assets/mbbs/maharashtra/16678147744.webp",
+      ]}
+      imageAlt="MBBS Admission in Maharashtra"
       counselingBody="State CET Cell / DMER Maharashtra"
       intro={[
-        "Maharashtra is one of India’s top states for MBBS admissions, known for premier medical colleges, strong hospital networks, and excellent clinical training.",
-        "Both government and private medical institutions admit students through NEET UG counselling.",
+        "Maharashtra has been one of the best states for MBBS admission for students across India. Maharashtra has a total of 56 medical colleges out of which 25 are government medical colleges, 19 are private medical colleges and 12 are deemed medical universities.",
+        "The state has one of the best medical college infrastructures in India. Fees of private colleges are also not very soaring high, so the cutoff is generally higher in this state. We help students in getting MBBS admission in Maharashtra.",
+      ]}
+      stats={[
+        "Total Medical Colleges in Maharashtra – 56",
+        "Government Medical Colleges in Maharashtra – 25",
+        "Private Medical Colleges in Maharashtra – 19",
+        "Deemed Medical Colleges in Maharashtra – 12",
       ]}
       fees={[
         "Private MBBS fees in Maharashtra generally range from ₹7–₹18 lakhs per year depending on the college and quota.",
